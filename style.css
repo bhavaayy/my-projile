@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F5F5; /* Off-White */
+    color: #283747; /* Dark Navy */
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+    font-family: 'Didot', serif; /* Serif font for headings */
+    color: #283747; /* Dark Navy */
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: #5D8AA8; /* Medium Blue */
+    margin: 10px auto;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the icon */
+    top: -30px; /* Raise the icon above the heading */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+}
+
+#education h2::before { content: '\f02d'; }
+#languages h2::before { content: '\f0ac'; }
+#experience h2::before { content: '\f0b1'; }
+#contact h2::before { content: '\f0e0'; }
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+a {
+    color: #5D8AA8; /* Medium Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #283747; /* Dark Navy */
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #D2B48C; /* Light Beige */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section div {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li::before {
+    content: '\f058';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: #5D8AA8; /* Medium Blue */
+    margin-right: 8px;
+}
+
+#contact p:nth-child(1)::before {
+    content: '\f095';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+#contact p:nth-child(2)::before {
+    content: '\f0e0';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 8px;
+}
